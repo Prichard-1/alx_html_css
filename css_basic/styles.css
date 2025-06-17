@@ -21,4 +21,8 @@ aside {
     flex: 1; /* Occupies ⅓ of the width */
     overflow-y: auto; /* Allows scrolling */
 }
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
