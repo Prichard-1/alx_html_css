@@ -1,0 +1,24 @@
+/* Make <body> a flexible container, stacking elements vertically */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make <main> a flexible container, arranging elements in a row */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Ensuring it adjusts in size automatically */
+}
+
+/* Define the relative width of <article> and <aside> */
+article {
+    flex: 2; /* Occupies ⅔ of the width */
+    overflow-y: auto; /* Allows scrolling */
+}
+
+aside {
+    flex: 1; /* Occupies ⅓ of the width */
+    overflow-y: auto; /* Allows scrolling */
+}
+
