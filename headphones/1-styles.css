@@ -1,4 +1,7 @@
 
+body{
+background-color: grey;
+}
 :root {
   --primary-color: #FF6565;
   --text-color: #fff;
