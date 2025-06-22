@@ -1,9 +1,19 @@
 :root {
   --primary-color: #ff6565;
-  --text-color: #ffffff;
+  --text-color: white;
   --font-main: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
 }
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 
 * {
   margin: 0;
@@ -11,11 +21,23 @@
   box-sizing: border-box;
 }
 
+.logo2 {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+}
+
+
 body {
   font-family: var(--font-main);
   background-color: #ffffff;
-  color: #333333;
+  color:black;
 }
+
+
 
 .container {
   max-width: var(--max-width);
@@ -25,17 +47,11 @@ body {
 
 /* Header / Hero */
 .hero {
-  background: url('images/headphones_hero.jpg') no-repeat center/cover;
+  background: url('wallpaper.AVIF') no-repeat center/cover;
   padding: 60px 20px;
   text-align: center;
   color: var(--text-color);
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  }
 
 .nav-links {
   list-style: none;
@@ -49,7 +65,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:active {
   color: var(--primary-color);
 }
 
@@ -73,7 +90,8 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:active {
   opacity: 0.9;
 }
 
@@ -230,8 +248,6 @@ width: 100%;
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: var(--primary-color);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
   margin: 0 10px;
 }
 
@@ -274,4 +290,21 @@ width: 100%;
     align-items: center;
     gap: 10px;
   }
+}
+.pentagon {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  clip-path: polygon(50% 0%, 95% 35%, 77% 90%, 23% 90%, 5% 35%);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: bold;
+}
+
+.pentagon h3 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin: 0;
 }
