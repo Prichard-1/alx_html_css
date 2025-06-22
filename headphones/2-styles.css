@@ -1,14 +1,19 @@
-
-body{
-background-color: grey;
-}
-
 :root {
   --primary-color: #ff6565;
-  --text-color: #fff;
+  --text-color: white;
   --font-main: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
 }
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 
 * {
   margin: 0;
@@ -16,11 +21,23 @@ background-color: grey;
   box-sizing: border-box;
 }
 
+.logo2 {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+}
+
+
 body {
   font-family: var(--font-main);
-  background-color: grey;
-  color: #333;
+  background-color: #ffffff;
+  color:black;
 }
+
+
 
 .container {
   max-width: var(--max-width);
@@ -30,17 +47,11 @@ body {
 
 /* Header / Hero */
 .hero {
-  background: url('headphones.jpg') no-repeat center/cover;
-  color: var(--text-color);
+  background: url('wallpaper.avif') no-repeat center/cover;
   padding: 60px 20px;
   text-align: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
+  color: var(--text-color);
+  }
 
 .nav-links {
   list-style: none;
@@ -51,9 +62,11 @@ body {
 .nav-links a {
   color: var(--text-color);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a:active {
   color: var(--primary-color);
 }
 
@@ -62,20 +75,25 @@ body {
   margin-bottom: 1rem;
 }
 
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
 .cta-button {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-decoration: none;
   border-radius: 4px;
-  display: inline-block;
-  margin-top: 20px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover,
+.cta-button:active {
   opacity: 0.9;
 }
-
 /* What we do */
 .what-we-do {
   padding: 80px 20px;
