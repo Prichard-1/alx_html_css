@@ -327,14 +327,18 @@ section {
     animation: fadeIn 0.3s ease-in-out;
   }
 
-  .hamburger {
-    display: block;
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000
-    margin-left: auto;
-  }
+.hamburger {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 }
 
 @keyframes fadeIn {
