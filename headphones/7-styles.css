@@ -215,15 +215,6 @@ section {
     flex-direction: column;
     align-items: center;
   }
-
-
-/* Animate on hover - Our results */
-.result {
-  transition: transform 0.3s ease-in-out;
-}
-.result:hover {
-  transform: rotate(3deg) scale(1.05);
-}
 /* Continuous float for services */
 .service {
   animation: floaty 3s ease-in-out infinite;
