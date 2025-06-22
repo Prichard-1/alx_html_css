@@ -1,6 +1,6 @@
 :root {
   --primary-color: #ff6565;
-  --text-color: #ffffff;
+  --text-color: white;
   --font-main: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
 }
@@ -15,24 +15,29 @@ nav {
 }
 
 
-.logo{
-display: flex;
-justify-content: flex-start;
-height: 50px;
-width: 50px;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.logo2 {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+}
+
+
 body {
   font-family: var(--font-main);
   background-color: #ffffff;
-  color: #333333;
+  color:black;
 }
+
+
 
 .container {
   max-width: var(--max-width);
@@ -40,7 +45,7 @@ body {
   padding: 20px;
 }
 
-/* ==== Header / Hero ==== */
+/* Header / Hero */
 .hero {
   background: url('wallpaper.AVIF') no-repeat center/cover;
   padding: 60px 20px;
@@ -90,7 +95,7 @@ body {
   opacity: 0.9;
 }
 
-/* ==== Shared Section Styling ==== */
+/* Sections */
 section {
   padding: 80px 20px;
   text-align: center;
@@ -104,24 +109,26 @@ section {
   line-height: 1.6;
 }
 
-/* ==== What we do Section ==== */
+/* Pentagon shape */
+.pentagon {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  margin: 0 auto 20px;
+}
+
+/* What we do */
 .services {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
 }
 
 .service {
   flex: 1 1 200px;
   max-width: 220px;
-}
-
-.service span {
-  font-size: 4rem;
-  color: var(--primary-color);
-  display: block;
-  margin-bottom: 20px;
 }
 
 .service h3 {
@@ -135,7 +142,7 @@ section {
   color: #555;
 }
 
-/* ==== Our results Section ==== */
+/* Our results */
 .our-results {
   background-color: #f9f9f9;
 }
@@ -143,20 +150,13 @@ section {
 .results {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: center;
+  gap: 40px;
 }
 
 .result {
   flex: 1 1 200px;
   max-width: 220px;
-}
-
-.result span {
-  font-size: 4rem;
-  color: var(--primary-color);
-  display: block;
-  margin-bottom: 20px;
 }
 
 .result h3 {
@@ -170,7 +170,7 @@ section {
   color: #555;
 }
 
-/* ==== Contact Us Section ==== */
+/* Contact Us */
 .contact-us {
   background-color: #ffffff;
 }
@@ -185,7 +185,7 @@ section {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -203,6 +203,8 @@ section {
   width: fit-content;
   align-self: center;
 }
+
+/* Footer */
 .footer {
   background-color: #000;
   color: var(--text-color);
@@ -224,31 +226,37 @@ section {
   height: 30px;
 }
 
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+}
+
+.social-icons span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
 .footer-note {
   font-size: 0.85rem;
   color: #aaa;
 }
 
-/* Responsive tweaks for footer */
-@media screen and (max-width: 480px) {
-  .footer-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .social-icons {
-    margin-top: 10px;
-  }
-}
-
-
-/* ==== Responsive for ≤ 480px ==== */
+/* Responsive tweaks */
 @media screen and (max-width: 480px) {
   .nav {
     flex-direction: column;
@@ -271,41 +279,32 @@ section {
     align-items: center;
   }
 
-  /* Animate on hover - What we do */
-.service {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
-.service:hover {
-  transform: translateY(-10px) scale(1.05);
-  opacity: 0.95;
+.pentagon {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: var(--primary-color);
+  clip-path: polygon(50% 0%, 95% 35%, 77% 90%, 23% 90%, 5% 35%);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-weight: bold;
 }
 
-/* Animate on hover - Our results */
-.result {
-  transition: transform 0.3s ease-in-out;
+.pentagon h3 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin: 0;
 }
-.result:hover {
-  transform: rotate(3deg) scale(1.05);
-}
-
-/* Continuous float for services */
-.service {
-  animation: floaty 3s ease-in-out infinite;
-}
-
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-}
-
-/* Continuous pulse for results */
-.result {
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-
