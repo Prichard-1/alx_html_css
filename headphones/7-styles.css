@@ -5,8 +5,10 @@
   --max-width: 1000px;
 }
 .logo{
-height: 40px;
-width: auto;
+display: flex;
+justify-content: flex-start;
+height: 50px;
+width: 50px;
 }
 
 * {
