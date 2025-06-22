@@ -5,6 +5,9 @@
   --max-width: 1000px;
 }
 
+.logo2{
+width: 50px;
+height: 50px;
 * {
   margin: 0;
   padding: 0;
@@ -22,10 +25,11 @@ body {
 }
 
 .hero {
-  background: url('images/headphones_hero.jpg') no-repeat center/cover;
+  background: url('wallpaper.AVIF') no-repeat center/cover;
   color: var(--text-color);
   text-align: center;
   padding: 60px 20px;
+  width: auto;
 }
 
 .nav {
