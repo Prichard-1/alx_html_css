@@ -4,6 +4,13 @@
   --font-main: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
 }
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .logo{
 display: flex;
 justify-content: flex-start;
@@ -35,13 +42,7 @@ body {
   padding: 60px 20px;
   text-align: center;
   color: var(--text-color);
-}
-
-.nav {
-  display: flex-end;
-  justify-content: flex-end;
-  align-items: center;
-}
+  }
 
 .nav-links {
   list-style: none;
