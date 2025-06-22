@@ -307,19 +307,6 @@ section {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
-
-
-.hamburger {
-  display: flex;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index:1000;
-  margin-left:auto;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
 }
 
 /* Responsive styles for ≤ 480px */
@@ -342,6 +329,10 @@ section {
 
   .hamburger {
     display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000
     margin-left: auto;
   }
 }
