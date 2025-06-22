@@ -307,6 +307,18 @@ section {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
+
+.hamburger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  display: none; /* default to hidden */
 }
 
 /* Responsive styles for ≤ 480px */
@@ -326,22 +338,6 @@ section {
     display: flex;
     animation: fadeIn 0.3s ease-in-out;
   }
-
-.hamburger {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: var(--text-color);
-  cursor: pointer;
-  display: none; /* default to hidden */
-}
-
-
-}
 
 @keyframes fadeIn {
   from {
