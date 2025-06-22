@@ -1,3 +1,8 @@
+
+body{
+background-color: grey;
+}
+
 :root {
   --primary-color: #ff6565;
   --text-color: #fff;
@@ -13,7 +18,7 @@
 
 body {
   font-family: var(--font-main);
-  background-color: #ffffff;
+  background-color: grey;
   color: #333;
 }
 
@@ -25,7 +30,7 @@ body {
 
 /* Header / Hero */
 .hero {
-  background: url('images/headphones_hero.jpg') no-repeat center/cover;
+  background: url('headphones.jpg') no-repeat center/cover;
   color: var(--text-color);
   padding: 60px 20px;
   text-align: center;
@@ -33,7 +38,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
