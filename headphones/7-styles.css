@@ -4,6 +4,10 @@
   --font-main: 'Source Sans Pro', sans-serif;
   --max-width: 1000px;
 }
+.logo{
+height: 40px;
+width: auto;
+}
 
 * {
   margin: 0;
@@ -25,7 +29,7 @@ body {
 
 /* ==== Header / Hero ==== */
 .hero {
-  background: url('headphones.AVIF') no-repeat center/cover;
+  background: url('wallpaper.AVIF') no-repeat center/cover;
   padding: 60px 20px;
   text-align: center;
   color: var(--text-color);
